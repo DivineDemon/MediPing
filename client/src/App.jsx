@@ -1,8 +1,10 @@
+/* eslint-disable */
+
 import React from "react";
 import { StreamChat } from "stream-chat";
 import { Chat } from "stream-chat-react";
 import "./App.css";
-// import Cookies from "universal-cookie";
+import Cookies from "universal-cookie";
 
 // Components
 import { ChannelListContainer, ChannelContainer } from "./components";
