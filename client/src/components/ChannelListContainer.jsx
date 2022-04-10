@@ -9,10 +9,24 @@ import {
   CompanyHeader,
 } from "./";
 
+const cookies = new Cookies();
+
 const ChannelListContainer = () => {
+  const logout = () => {
+    cookies.remove("token")
+    cookies.remove("userId");
+    cookies.remove("username");
+    cookies.remove("fullName");
+    cookies.remove("avatarURL");
+    cookies.remove("hashedPassword");
+    cookies.remove("phoneNumber");
+
+    window.location.reload();
+  };
+
   return (
     <>
-      <Sidebar />
+      <Sidebar logout={logout} />
       <div className="channel-list__list__wrapper">
         <CompanyHeader />
         <ChannelSearch />
