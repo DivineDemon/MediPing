@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { StreamChat } from "stream-chat";
 import { Chat } from "stream-chat-react";
-import "./App.css";
 import Cookies from "universal-cookie";
+import "stream-chat-react/dist/css/index.css";
+import "./App.css";
 
 // Components
 import { ChannelListContainer, ChannelContainer, Auth } from "./components";
