@@ -9,3 +9,4 @@ export { default as Auth } from "./Auth";
 export { default as ChannelInner } from "./ChannelInner";
 export { default as EditChannel } from "./EditChannel";
 export { default as CreateChannel } from "./CreateChannel";
+export { default as UserList } from "./UserList";
